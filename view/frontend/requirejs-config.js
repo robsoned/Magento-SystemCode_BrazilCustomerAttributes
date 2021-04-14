@@ -23,6 +23,9 @@ var config = {
             },
             'Magento_Checkout/js/action/place-order': {
                 'SystemCode_BrazilCustomerAttributes/js/action/place-order-mixin': true
+            },
+            'Magento_Checkout/js/model/new-customer-address': {
+                'SystemCode_BrazilCustomerAttributes/js/model/new-customer-address-mixin': true
             }
         }
     }
