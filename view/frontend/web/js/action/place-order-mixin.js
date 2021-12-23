@@ -6,7 +6,7 @@ define([
     'use strict';
 
     return function (placeOrderAction) {
-        return wrapper.wrap(placeOrderAction, function (originalAction, messageContainer) {
+        return wrapper.wrap(placeOrderAction, function (originalAction, paymentData, messageContainer) {
             var billingAddress = quote.billingAddress();
 
             if (billingAddress['extension_attributes'] === undefined) {
@@ -23,7 +23,7 @@ define([
                 });
             }
 
-            return originalAction(messageContainer);
+            return originalAction(paymentData, messageContainer);
         });
     };
 });
