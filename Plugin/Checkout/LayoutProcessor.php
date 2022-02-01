@@ -93,7 +93,7 @@ class LayoutProcessor
 
         $shippingAddressFieldsetChild['street']['children'][0]['validation'] = [
             'required-entry' => true,
-            'min_text_len‌​gth' => 1,
+            'min_text_length' => 1,
             'max_text_length' => 255
         ];
 
@@ -103,7 +103,7 @@ class LayoutProcessor
             $shippingAddressFieldsetChild['street']['children'][1]['label'] = __('Number');
             $shippingAddressFieldsetChild['street']['children'][1]['validation'] = [
                 'required-entry' => true,
-                'min_text_len‌​gth' => 1,
+                'min_text_length' => 1,
                 'max_text_length' => 255
             ];
         }
@@ -120,7 +120,7 @@ class LayoutProcessor
             $shippingAddressFieldsetChild['street']['children'][3]['label'] = __('Neighborhood');
             $shippingAddressFieldsetChild['street']['children'][3]['validation'] = [
                 'required-entry' => true,
-                'min_text_len‌​gth' => 1,
+                'min_text_length' => 1,
                 'max_text_length' => 255
             ];
         }
@@ -208,7 +208,7 @@ class LayoutProcessor
                     $paymentFormChildren['street']['children'][1]['label'] = __('Number');
                     $paymentFormChildren['street']['children'][1]['validation'] = [
                         'required-entry' => true,
-                        'min_text_len‌​gth' => 1,
+                        'min_text_length' => 1,
                         'max_text_length' => 255
                     ];
                 }
@@ -225,7 +225,7 @@ class LayoutProcessor
                     $paymentFormChildren['street']['children'][3]['label'] = __('Neighborhood');
                     $paymentFormChildren['street']['children'][3]['validation'] = [
                         'required-entry' => true,
-                        'min_text_len‌​gth' => 1,
+                        'min_text_length' => 1,
                         'max_text_length' => 255
                     ];
                 }
