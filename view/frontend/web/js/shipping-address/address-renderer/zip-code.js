@@ -58,7 +58,7 @@ define([
             this.bubble('update', this.hasChanged());
             var validate = this.validate();
 
-            if(validate.valid == true && this.value() && this.value().length == 9){
+            if(validate.valid == true && this.value() && this.value().replace(/\D/g, '').length == 8){
                 jquery('body').loader('show');
 
                 var element = this;
