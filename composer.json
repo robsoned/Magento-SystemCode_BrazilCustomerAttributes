@@ -1,5 +1,5 @@
 {
-    "name": "systemcode/brazilcustomerattributes",
+    "name": "ricardomartins/brazilcustomerattributes",
     "description":"Magento 2 module to adapt customer and address fields to brazil.",
     "keywords": [
         "magento 2",
@@ -21,7 +21,7 @@
     "type": "magento2-module",
     "version": "1.1.3",
     "license": [
-        "proprietary"
+        "OSL-3.0"
     ],
     "homepage": "https://www.systemcode.com.br/",
     "support": {
@@ -34,6 +34,12 @@
             "email": "contato@systemcode.com.br",
             "homepage": "https://www.systemcode.com.br/",
             "role": "CTO"
+        },
+        {
+            "name": "Ricardo Martins",
+            "email": "ricardo@magenteiro.com",
+            "homepage": "https://magenteiro.com/",
+            "role": "Developer"
         }
     ],
     "autoload": {
