@@ -98,7 +98,7 @@ class Streetedit extends \Magento\Customer\Block\Address\Edit
      */
     public function getThirdLineNeighborhood()
     {
-        return $this->helper->getConfig("brazilcustomerattributes/general/line_complement");
+        return $this->helper->getConfig("brazilcustomerattributes/general/line_neighborhood");
     }
 
     /**
@@ -107,7 +107,7 @@ class Streetedit extends \Magento\Customer\Block\Address\Edit
      */
     public function getFourthLineComplement()
     {
-        return $this->helper->getConfig("brazilcustomerattributes/general/line_neighborhood");
+        return $this->helper->getConfig("brazilcustomerattributes/general/line_complement");
     }
 
 }

@@ -69,7 +69,7 @@ class Street extends \Magento\Customer\Block\Widget\AbstractWidget
      */
     public function getThirdLineNeighborhood()
     {
-        return $this->helper->getConfig("brazilcustomerattributes/general/line_complement");
+        return $this->helper->getConfig("brazilcustomerattributes/general/line_neighborhood");
     }
 
     /**
@@ -78,7 +78,7 @@ class Street extends \Magento\Customer\Block\Widget\AbstractWidget
      */
     public function getFourthLineComplement()
     {
-        return $this->helper->getConfig("brazilcustomerattributes/general/line_neighborhood");
+        return $this->helper->getConfig("brazilcustomerattributes/general/line_complement");
     }
 
 }

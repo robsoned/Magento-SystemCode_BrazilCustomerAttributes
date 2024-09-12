@@ -80,10 +80,10 @@ define([
                             registry.get(element.parentName + '.' + 'street.0').value(data.street ?? '');
                         }
                         if(registry.get(element.parentName + '.' + 'street.2')){
-                            registry.get(element.parentName + '.' + 'street.2').value(data.additional_info ?? '');
+                            registry.get(element.parentName + '.' + 'street.2').value(data.neighborhood ?? '');
                         }
                         if(registry.get(element.parentName + '.' + 'street.3')){
-                            registry.get(element.parentName + '.' + 'street.3').value(data.neighborhood ?? '');
+                            registry.get(element.parentName + '.' + 'street.3').value(data.additional_info ?? '');
                         }
                         if(registry.get(element.parentName + '.' + 'city')){
                             registry.get(element.parentName + '.' + 'city').value(data.city ?? '');

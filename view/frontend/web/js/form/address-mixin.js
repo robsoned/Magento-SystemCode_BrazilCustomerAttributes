@@ -20,8 +20,8 @@ require([
                 // TODO
             }else{
                 $("#street_1").val(data.street??'');
-                $("#street_3").val(data.additional_info??'');
-                $("#street_4").val(data.neighborhood??'');
+                $("#street_3").val(data.neighborhood??'');
+                $("#street_4").val(data.additional_info??'');
                 $("#city").val(data.city??'');
                 $("#country").val('BR');
                 $("#region_id").val(data.region_id??'');

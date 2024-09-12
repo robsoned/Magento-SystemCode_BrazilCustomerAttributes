@@ -34,10 +34,10 @@
     <?php if($_streetLines>=3): ?>
         <br>
         <?php if($block->getThirdLineNeighborhood()): ?>
-            <label for="street_3" class="label"><span><?php /* @escapeNotVerified */ echo __('Complement') ?></span></label>
+            <label for="street_3" class="label"><span><?php /* @escapeNotVerified */ echo __('Neighborhood') ?></span></label>
         <?php endif; ?>
         <div class="control">
-            <input type="text" name="street[2]" value="<?php echo $block->escapeHtml($block->getStreetLine(3)) ?>" title="<?php /* @escapeNotVerified */ echo __('Complement') ?>" id="street_3" class="input-text"  />
+            <input type="text" name="street[2]" value="<?php echo $block->escapeHtml($block->getStreetLine(3)) ?>" title="<?php /* @escapeNotVerified */ echo __('Neighborhood') ?>" id="street_3" class="input-text"  />
         </div>
     <?php endif; ?>
 </div>
@@ -45,10 +45,10 @@
     <?php if($_streetLines==4): ?>
         <br>
         <?php if($block->getFourthLineComplement()): ?>
-            <label for="street_4" class="label"><span><?php /* @escapeNotVerified */ echo __('Neighborhood') ?></span></label>
+            <label for="street_4" class="label"><span><?php /* @escapeNotVerified */ echo __('Complement') ?></span></label>
         <?php endif; ?>
         <div class="control">
-            <input type="text" name="street[3]" value="<?php echo $block->escapeHtml($block->getStreetLine(4)) ?>" title="<?php /* @escapeNotVerified */ echo __('Neighborhood') ?>" id="street_4" class="input-text required-entry"  />
+            <input type="text" name="street[3]" value="<?php echo $block->escapeHtml($block->getStreetLine(4)) ?>" title="<?php /* @escapeNotVerified */ echo __('Complement') ?>" id="street_4" class="input-text required-entry"  />
         </div>
     <?php endif; ?>
 </div>

@@ -109,20 +109,20 @@ class LayoutProcessor
         }
 
         // Street Line 2
-        if($this->helper->getConfig("brazilcustomerattributes/general/line_complement")
-                && $numStreetLines >= 3) {
-            $shippingAddressFieldsetChild['street']['children'][2]['label'] = __('Complement');
-        }
-        
-        // Street Line 3
         if($this->helper->getConfig("brazilcustomerattributes/general/line_neighborhood")
                 && $numStreetLines >= 4) {
-            $shippingAddressFieldsetChild['street']['children'][3]['label'] = __('Neighborhood');
-            $shippingAddressFieldsetChild['street']['children'][3]['validation'] = [
+            $shippingAddressFieldsetChild['street']['children'][2]['label'] = __('Neighborhood');
+            $shippingAddressFieldsetChild['street']['children'][2]['validation'] = [
                 'required-entry' => true,
                 'min_text_length' => 1,
                 'max_text_length' => 255
             ];
+        }
+
+        // Street Line 3
+        if($this->helper->getConfig("brazilcustomerattributes/general/line_complement")
+                && $numStreetLines >= 3) {
+            $shippingAddressFieldsetChild['street']['children'][3]['label'] = __('Complement');
         }
 
         // Street Prefix
@@ -214,21 +214,21 @@ class LayoutProcessor
                 }
 
                 // Street Line 2
-                if($this->helper->getConfig("brazilcustomerattributes/general/line_complement")
-                        && $numStreetLines >= 3) {
-                    $paymentFormChildren['street']['children'][2]['label'] = __('Complement');
-                }
-
-                // Street Line 3
                 if($this->helper->getConfig("brazilcustomerattributes/general/line_neighborhood")
                         && $numStreetLines >= 4) {
-                    $paymentFormChildren['street']['children'][3]['label'] = __('Neighborhood');
-                    $paymentFormChildren['street']['children'][3]['validation'] = [
+                    $paymentFormChildren['street']['children'][2]['label'] = __('Neighborhood');
+                    $paymentFormChildren['street']['children'][2]['validation'] = [
                         'required-entry' => true,
                         'min_text_length' => 1,
                         'max_text_length' => 255
                     ];
-                }
+                }                
+
+                // Street Line 3
+                if($this->helper->getConfig("brazilcustomerattributes/general/line_complement")
+                        && $numStreetLines >= 3) {
+                    $paymentFormChildren['street']['children'][3]['label'] = __('Complement');
+                }                
 
                 // Street Prefix
                 if($this->helper->getConfig("brazilcustomerattributes/general/prefix_enabled")) {
