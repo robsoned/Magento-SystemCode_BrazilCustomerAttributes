@@ -26,7 +26,7 @@ require([
                 $("#country").val('BR');
                 $("#region_id").val(data.region_id??'');
             }
-        }).error(function(){});
+        }).fail(function(){});
 
         $('body').loader('hide');
     });
