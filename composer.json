@@ -1,5 +1,5 @@
 {
-    "name": "ricardomartins/brazilcustomerattributes",
+    "name": "robsoned/brazilcustomerattributes",
     "description":"Magento 2 module to adapt customer and address fields to brazil.",
     "keywords": [
         "magento 2",
@@ -16,18 +16,14 @@
     "require": {
         "magento/module-backend": "100.0.*|100.1.*|100.2.*|101.0.*|102.*",
         "magento/framework": "100.0.*|100.1.*|101.0.*|102.0.*|103.0.*",
-        "ricardomartins/brazilzipcode": "*"
+        "robsoned/brazilzipcode": "*"
     },
     "type": "magento2-module",
     "version": "1.1.7",
     "license": [
         "OSL-3.0"
     ],
-    "homepage": "https://www.systemcode.com.br/",
-    "support": {
-        "email": "contato@systemcode.com.br",
-        "issues": "https://github.com/eduardoddias/Magento-SystemCode_BrazilCustomerAttributes/issues/"
-    },
+    "homepage": "https://github.com/robsoned/Magento-SystemCode_BrazilCustomerAttributes",
     "authors": [
         {
             "name": "Eduardo Diogo Dias",
@@ -40,7 +36,12 @@
             "email": "ricardo@magenteiro.com",
             "homepage": "https://magenteiro.com/",
             "role": "Developer"
-        }
+        },
+        {
+            "name": "Robson Santos",            
+            "homepage": "https://github.com/robsoned/Magento-SystemCode_BrazilCustomerAttributes",
+            "role": "Developer"
+        }    
     ],
     "autoload": {
         "files": [

@@ -20,7 +20,7 @@ PS: This module doesn't work with checkout as guest.
 
 #### ✓ Install by Composer (recommended)
 ```
-composer require systemcode/brazilcustomerattributes
+composer require robsoned/brazilcustomerattributes
 php bin/magento module:enable SystemCode_BrazilCustomerAttributes SystemCode_Base
 php bin/magento setup:upgrade
 ```
@@ -74,7 +74,7 @@ OBS: O módulo não funciona com checkout como visitante.
 
 #### ✓ Instalação via Composer (recomendado)
 ```
-composer require systemcode/brazilcustomerattributes
+composer require robsoned/brazilcustomerattributes
 php bin/magento module:enable
 php bin/magento setup:upgrade
 ```
